@@ -1,0 +1,14 @@
+'Test.Iuav:Document.AbstractPage':
+  abstract: true
+  superTypes:
+    'Neos.Neos:Document': true
+  childNodes:
+    main:
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          'Test.Iuav:Constraint.Content.Restricted': false
+  constraints:
+    nodeTypes:
+      'Test.Iuav:Document.HomePage': false
+      'Test.Iuav:Constraint.Document.Restricted': false

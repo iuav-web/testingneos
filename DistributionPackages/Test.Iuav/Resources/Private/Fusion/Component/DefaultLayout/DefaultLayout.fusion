@@ -1,0 +1,9 @@
+prototype(Test.Iuav:Component.DefaultLayout) < prototype(Neos.Fusion:Component) {
+    content = ''
+
+    renderer = afx`
+        <Test.Iuav:Component.Header />
+        {props.content}
+        <Test.Iuav:Component.Footer />
+    `
+}

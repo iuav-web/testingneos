@@ -1,0 +1,24 @@
+##
+# Adding this as superType will prevent inserting this page type below normal pages
+#
+# [Youtube Tutorial explaining constraints](https://www.youtube.com/watch?v=ZCRYsYvxXFI&t=247s)
+#
+# Example:
+# Let's say you have a have a news overview of news pages below. To force
+# news pages to be created only directly below:
+#
+# 'Test.Iuav:Document.NewsOverview':
+#   superTypes:
+#     'Test.Iuav:Document.AbstractPage': true
+#   constraints:
+#     nodeTypes:
+#       'Test.Iuav:Document.Restricted': false
+#
+# 'Test.Iuav:Content.News':
+#   superTypes:
+#     'Test.Iuav:Document.AbstractPage': true
+#     'Test.Iuav:Constraint.Document.Restricted': true
+#
+##
+'Test.Iuav:Constraint.Document.Restricted':
+  abstract: true

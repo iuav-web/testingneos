@@ -1,0 +1,8 @@
+'Test.Iuav:Content.Image':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Test.Iuav:Mixin.Image': true
+  ui:
+    label: Image
+    icon: icon-picture
+    position: 300
